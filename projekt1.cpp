@@ -20,8 +20,12 @@ int main() {
         cout << endl;
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
+	cout << "1. Wyznacz silnie pierwszej liczby\n";
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
+	if (wyjscie == 1) {
+	    cout << "\nWynik: " << silnia(a) << endl;
+	}
     } while(wyjscie != 0);
     return 0;
 }
